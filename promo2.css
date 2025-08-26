@@ -1,0 +1,46 @@
+.photo {
+    position: relative; /* necesario para posicionar el texto */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+/* Texto encima de la foto */
+.caption {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* fondo semi-transparente */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.photo:hover .caption {
+    opacity: 1;
+}
+
+
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}

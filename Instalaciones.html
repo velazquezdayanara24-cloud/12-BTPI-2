@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalaciones del  Colegio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #f1c40f;
+    }
+
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .footer-buttons a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn-volver {
+      background: #ffc107;
+      color: #004080;
+    }
+
+    .btn-volver:hover {
+      filter: brightness(1.1);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+
+    .btn-facebook { background: #1877f2; }
+    .btn-facebook:hover { background: #145db2; transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,0.3); }
+
+    .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+    .btn-instagram:hover { filter: brightness(1.15); transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,0.3); }
+
+    .btn-telefono { background: #28a745; }
+    .btn-telefono:hover { filter: brightness(1.15); transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,0.3); }
+
+    footer p {
+      font-size: 0.95rem;
+      color: #f0f0f0;
+      margin-top: 10px;
+    }
+
+    @media(max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .card img { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Descubre nuestras Instalaciones</h1>
+  </header>
+
+  <main class="gallery">
+    <div class="card"><img src="ass.jpeg" alt="Aula"></div>
+    <div class="card"><img src="amm.jpeg" alt="Laboratorio"></div>
+    <div class="card"><img src="WhatsApp Image 2025-07-28 at 6.53.14 PM.jpeg" alt="Biblioteca"></div>
+    <div class="card"><img src="01.jpeg" alt="Patio escolar"></div>
+    <div class="card"><img src="02.jpeg" alt="Estudiantes"></div>
+    <div class="card"><img src="03.jpeg" alt="Graduación"></div>
+    <div class="card"><img src="05.jpeg" alt="Cancha deportiva"></div>
+    <div class="card"><img src="06.jpeg" alt="Sala de cómputo"></div>
+    <div class="card"><img src="07.jpeg" alt="Evento cultural"></div>
+    <div class="card"><img src="08.jpeg" alt="Clases de arte"></div>
+    <div class="card"><img src="09.jpeg" alt="Laboratorio de ciencias"></div>
+    <div class="card"><img src="10.jpeg" alt="Biblioteca moderna"></div>
+    <div class="card"><img src="11.jpeg" alt="Biblioteca moderna"></div>
+    <div class="card"><img src="12.jpeg" alt="Biblioteca moderna"></div>
+    <div class="card"><img src="13.jpeg" alt="Biblioteca moderna"></div>
+  </main>
+
+  <footer>
+    <h3>Contacto y Redes Oficiales</h3>
+    <div class="footer-buttons">
+      <a href="https://www.facebook.com/inst.fdr/" target="_blank" class="btn-facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="20"> Facebook
+      </a>
+      <a href="https://www.instagram.com/inst.fdr/" target="_blank" class="btn-instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" width="20"> Instagram
+      </a>
+      <a href="tel:+50426651643" class="btn-telefono">📞 +504 2665-1643</a>
+      <a href="Historia FDR.html" class="btn">Volver</a>
+    </div>
+  </footer>
+</body>
+</html>

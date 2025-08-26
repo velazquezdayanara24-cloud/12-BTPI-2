@@ -1,0 +1,71 @@
+:root{
+  --brand:#004d7a;
+  --brand2:#38b6ff;
+  --bg:#f8fafc;
+  --text:#1a2a2f;
+  --muted:#6b7d86;
+  --radius:18px;
+  --shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family: "Poppins", sans-serif; background:var(--bg); color:var(--text); line-height:1.6}
+
+/* Hero */
+.hero{
+  background:linear-gradient(135deg,var(--brand),var(--brand2));
+  color:#fff;text-align:center;padding:70px 20px;
+}
+.hero__inner h1{font-size:clamp(2rem,5vw,3rem);margin:0}
+.hero__inner p{margin-top:10px;font-size:1.2rem;opacity:.9}
+
+/* Top bar */
+.top{
+  position:sticky;top:0;background:#fff;
+  border-bottom:1px solid #e2e8f0;
+  padding:10px 20px;display:flex;justify-content:space-between;align-items:center;
+  z-index:10;
+}
+.brand{font-weight:700;color:var(--brand)}
+.btn{padding:.4rem 1rem;border-radius:999px;background:var(--brand2);color:#fff;text-decoration:none;font-weight:600}
+.btn:hover{background:#1f9eff}
+
+/* Contenido */
+.wrap{max-width:1200px;margin:40px auto;padding:0 20px}
+.section-title{font-size:1.8rem;margin-bottom:5px}
+.muted{color:var(--muted);margin-bottom:20px}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:20px;
+}
+.card{
+  display:block;border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);
+  background:#fff;transition:transform .3s ease;
+}
+.card img{
+  width:100%;height:260px;object-fit:cover;display:block;
+}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;display:none;align-items:center;justify-content:center;
+  background:rgba(0,0,0,.85);z-index:100;padding:20px;
+}
+.lightbox:target{display:flex}
+.lightbox img{
+  max-width:95%;max-height:90vh;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.4)
+}
+
+/* CTA */
+.cta{
+  background:#fff;padding:30px;margin:40px auto;
+  text-align:center;border-radius:var(--radius);box-shadow:var(--shadow);max-width:800px
+}
+.cta h3{margin-bottom:10px}
+
+/* Footer */
+.foot{text-align:center;padding:15px;color:#555;margin-top:30px}

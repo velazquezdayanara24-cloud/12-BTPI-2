@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia - Instituto Franklin Delano Roosevelt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #002855;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .contenedor {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #002855;
+      border-bottom: 2px solid #002855;
+      padding-bottom: 5px;
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #002855;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Instituto Franklin Delano Roosevelt</h1>
+    <p>Historia de nuestra institución</p>
+  </header>
+
+  <div class="contenedor">
+    <h2>Orígenes</h2>
+    <p>
+      El Instituto Franklin Delano Roosevelt fue fundado con el propósito de brindar 
+      educación de calidad a la juventud hondureña. Desde sus inicios, se ha caracterizado 
+      por ser una institución comprometida con la formación académica, social y cultural 
+      de sus estudiantes.
+    </p>
+
+    <h2>Crecimiento y Desarrollo</h2>
+    <p>
+      A lo largo de los años, el FDR ha experimentado un crecimiento notable, ampliando 
+      su infraestructura y diversificando su oferta académica. Gracias al esfuerzo de 
+      directores, docentes, estudiantes y padres de familia, la institución se ha 
+      consolidado como una de las más importantes en la región.
+    </p>
+    <p>
+      Se implementaron nuevas carreras y modalidades educativas, lo que permitió atender 
+      las necesidades de la sociedad moderna y formar bachilleres capacitados en diversas 
+      áreas como Informática, Administración de Empresas, Ciencias y Humanidades, 
+      Contaduría y Finanzas, Salud y Nutrición Comunitaria, entre otras.
+    </p>
+
+    <h2>Impacto en la Comunidad</h2>
+    <p>
+      El FDR no solo se ha dedicado a la enseñanza académica, sino también al 
+      fortalecimiento de valores, fomentando el respeto, la solidaridad y el compromiso 
+      social. La institución ha participado activamente en proyectos comunitarios, 
+      deportivos y culturales, contribuyendo al desarrollo integral de los jóvenes.
+    </p>
+
+    <h2>Actualidad</h2>
+    <p>
+      Hoy en día, el Instituto Franklin Delano Roosevelt continúa siendo un referente 
+      educativo, formando generaciones de profesionales que destacan tanto a nivel 
+      nacional como internacional. Su misión sigue firme: educar con excelencia y valores, 
+      preparando a sus estudiantes para enfrentar los retos del futuro.
+    </p>
+  </div>
+
+  <footer>
+    <a href="Historia FDR.html" class="btn">Volver</a>
+    <p>&copy; 2025 Instituto Franklin Delano Roosevelt - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carreras - Instituto Franklin Delano Roosevelt</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+    body {
+      background: url("imagenes/fondo-colegio.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background: rgba(0,0,0,0.85);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    nav {
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+    nav a {
+      color: #00d9ff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-top: 10px;
+      color: #00d9ff;
+      text-shadow: 0 0 10px #00d9ff, 0 0 20px rgba(0,217,255,0.6);
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 8px;
+      color: #e0e0e0;
+    }
+    section.intro {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.6);
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,217,255,0.4);
+    }
+    section.intro h2 {
+      color: #00d9ff;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    section.intro p {
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #ddd;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+    .card {
+      background: rgba(0,0,0,0.75);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 6px 18px rgba(0,217,255,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(0,217,255,0.4);
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,217,255,0.7);
+    }
+    .card h2 {
+      color: #00d9ff;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+      border-bottom: 1px solid rgba(0,217,255,0.3);
+      padding-bottom: 5px;
+    }
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #f0f0f0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 28px;
+      background: #00d9ff;
+      color: #000;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,217,255,0.6);
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+    .btn:hover {
+      background: #00aacc;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(0,217,255,0.9);
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(0,0,0,0.9);
+      font-size: 0.95rem;
+      color: #bbb;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="Inicio FDR.html">Inicio</a>
+      <a href="Historia FDR.html">Historia</a>
+      <a href="Carreras.html">Carreras</a>
+      <a href="Contacto FDR.html">Contacto</a>
+    </nav>
+    <h1>Carreras del Instituto Franklin Delano Roosevelt</h1>
+    <p>Formando profesionales con excelencia académica y valores</p>
+  </header>
+
+  <section class="intro">
+    <h2>Descubre nuestras opciones académicas</h2>
+    <p>
+      En el Instituto Franklin Delano Roosevelt ofrecemos una amplia gama de carreras 
+      que preparan a nuestros estudiantes para el futuro. Desde programas técnicos hasta 
+      bachilleratos especializados, brindamos una formación integral que combina 
+      conocimientos, práctica y valores. Aquí encontrarás carreras enfocadas en la 
+      tecnología, administración, salud, finanzas, turismo, construcción y más.
+    </p>
+  </section>
+
+  <main>
+    <div class="card">
+      <h2>Tercer Ciclo de Educación Básica</h2>
+      <p>Formación académica general para los tres primeros años de secundaria. 
+      <br><strong>Objetivo:</strong> Preparar a los estudiantes para bachilleratos técnicos. 
+      <br><strong>Áreas de estudio:</strong> Matemáticas, Ciencias Naturales, Español, Estudios Sociales.</p>
+    </div>
+
+    <div class="card">
+      <h2>Ciencias y Humanidades Acelerado</h2>
+      <p>Programa para culminar estudios en menor tiempo, con enfoque en ciencias sociales y humanidades.
+      <br><strong>Salidas:</strong> Estudios universitarios en Derecho, Psicología, Educación.</p>
+    </div>
+
+    <div class="card">
+      <h2>Administración de Empresas</h2>
+      <p>Preparación en gestión, liderazgo, mercadeo y finanzas.
+      <br><strong>Salidas:</strong> Empresario, Administrador, Gestor de proyectos.</p>
+    </div>
+
+    <div class="card">
+      <h2>Informática</h2>
+      <p>Formación en programación, bases de datos, diseño web y redes.
+      <br><strong>Salidas:</strong> Programador, Técnico en soporte, Desarrollador web.</p>
+    </div>
+
+    <div class="card">
+      <h2>Salud y Nutrición Comunitaria</h2>
+      <p>Enfocado en promoción de salud y prevención de enfermedades.
+      <br><strong>Salidas:</strong> Promotor de salud, Técnico en nutrición.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contaduría y Finanzas</h2>
+      <p>Especialización en registros financieros y análisis económico.
+      <br><strong>Salidas:</strong> Contador, Analista financiero.</p>
+    </div>
+
+    <div class="card">
+      <h2>Ciencias y Humanidades</h2>
+      <p>Preparación versátil en áreas científicas y humanísticas.
+      <br><strong>Salidas:</strong> Estudios superiores en diversas áreas.</p>
+    </div>
+
+    <div class="card">
+      <h2>Banca y Finanzas</h2>
+      <p>Formación en gestión bancaria y financiera.
+      <br><strong>Salidas:</strong> Cajero bancario, Asesor financiero.</p>
+    </div>
+
+    <div class="card">
+      <h2>Administración Hotelera</h2>
+      <p>Preparación en turismo, atención al cliente y gestión de hoteles.
+      <br><strong>Salidas:</strong> Técnico en hotelería, Coordinador de turismo.</p>
+    </div>
+
+    <div class="card">
+      <h2>Construcciones Metálicas</h2>
+      <p>Enfoque en estructuras metálicas y soldadura.
+      <br><strong>Salidas:</strong> Técnico en soldadura, Constructor industrial.</p>
+    </div>
+
+    <div class="card">
+      <h2>Robótica</h2>
+      <p>Combina programación, electrónica y mecánica.
+      <br><strong>Salidas:</strong> Técnico en automatización, Desarrollador de robots.</p>
+    </div>
+
+    <div class="card">
+      <h2>Marítimo y Portuario</h2>
+      <p>Formación en logística marítima y comercio internacional.
+      <br><strong>Salidas:</strong> Técnico portuario, Gestor logístico.</p>
+    </div>
+
+    <div class="card">
+      <h2>ISEMED</h2>
+      <p>Educación Media a Distancia, ideal para quienes trabajan y necesitan flexibilidad.
+      <br><strong>Modalidad:</strong> Virtual y presencial flexible.</p>
+    </div>
+
+    <a href="Historia FDR.html" class="btn">Volver</a>
+  </main>
+
+  <footer>
+    <h3>Contacto y Redes Oficiales</h3>
+
+    <div class="redes">
+      <a href="https://www.facebook.com/inst.fdr/" target="_blank" class="btn-facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="20">
+        Facebook Oficial
+      </a>
+
+      <a href="https://www.instagram.com/inst.fdr/" target="_blank" class="btn-instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" width="20">
+        Instagram Oficial
+      </a>
+
+      <a href="tel:+50426651643" class="btn-telefono">
+        📞 +504 2665-1643
+      </a>
+    </div>
+
+    <p>&copy; 2025 - Creado por alumnas de 12º de Informática</p>
+  </footer>
+</body>
+</html>

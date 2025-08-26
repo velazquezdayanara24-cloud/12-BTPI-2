@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienvenida - Instituto Franklin Delano Roosevelt</title>
+  <link rel="icon" href="imagenes/logo imagen fdr.jpeg" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('imagenes/fondo-colegio.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 20px;
+      width: 100%;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #00d9ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #e0e0e0;
+    }
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      max-width: 900px;
+      width: 90%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      margin: 20px auto;
+      box-shadow: 0 0 20px rgba(0, 217, 255, 0.7);
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00d9ff;
+    }
+    main h2 {
+      font-size: 2rem;
+      color: #00d9ff;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #00d9ff;
+      color: black;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0, 217, 255, 0.6);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0099cc;
+      transform: scale(1.05);
+      color: white;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      width: 100%;
+    }
+    .redes {
+      margin: 15px 0;
+    }
+    .redes a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1877f2;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .redes a.instagram {
+      background-color: #e1306c;
+    }
+    .redes a:hover {
+      opacity: 0.85;
+    }
+    .redes img {
+      width: 22px;
+      height: 22px;
+      margin-right: 8px;
+    }
+    footer p {
+      color: #cccccc;
+      margin-top: 10px;
+    }
+    #videoFondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.8; 
+    }
+  </style>
+</head>
+<body>
+   <video autoplay muted loop id="videoFondo">
+      <source src="imagenes/fondo fdr.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+   </video>
+
+   <audio id="musicaFondo" loop>
+      <source src="imagenes/musica de fondo.mp3" type="audio/mpeg" />
+      Tu navegador no soporta el audio.
+   </audio>
+
+  <header>
+    <h1>Bienvenidos al Instituto Franklin Delano Roosevelt</h1>
+    <p> Puerto Cortés, Honduras</p>
+  </header>
+
+  <main>
+    <h2> 12º BTPInformatica "2"</h2>
+    <a href="Historia FDR.html" class="btn">Conoce la Historia del Colegio</a>
+    <button class="btn" id="toggleMusica">🎵 Reproducir música</button>
+  </main>
+
+  <footer>
+    <h3>Contacto y Redes Oficiales</h3>
+
+    <div class="redes">
+      <a href="https://www.facebook.com/inst.fdr/" target="_blank" class="btn-facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="20">
+        Facebook Oficial
+      </a>
+
+      <a href="https://www.instagram.com/inst.fdr/" target="_blank" class="btn-instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" width="20">
+        Instagram Oficial
+      </a>
+
+      <a href="tel:+50426651643" class="btn-telefono">
+        📞 +504 2665-1643
+      </a>
+    </div>
+
+    <p>&copy; 2025 - Creado por alumnas de 12º de Informática</p>
+  </footer>
+  <script>
+    const audio = document.getElementById('musicaFondo');
+    const boton = document.getElementById('toggleMusica');
+
+    boton.addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play();
+        boton.textContent = "⏸️ Detener música";
+      } else {
+        audio.pause();
+        boton.textContent = "🎵 Reproducir música";
+      }
+    });
+  </script>
+
+</body>
+</html>
